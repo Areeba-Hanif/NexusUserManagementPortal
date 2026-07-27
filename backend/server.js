@@ -70,3 +70,6 @@ app.listen(PORT, () => {
     console.log(`[OK] Server running on http://localhost:${PORT}`);
     console.log(`[WEB] Open frontend live here: http://localhost:${PORT}/pages/login.html`);
 });
+
+// At the end of server.js / index.js
+module.exports = app;
