@@ -1,0 +1,68 @@
+<!-- Mobile Toggle Topbar Header (Visible only on small screens) -->
+<div class="d-md-none bg-dark text-white p-3 d-flex justify-content-between align-items-center w-100 border-bottom border-secondary">
+  <div class="d-flex align-items-center gap-2">
+    <i class="bi bi-shield-fill-check text-primary fs-4"></i>
+    <h5 class="fw-bold m-0 text-white">NexusUser Portal</h5>
+  </div>
+  <!-- Mobile Menu Trigger Button -->
+  <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+    <i class="bi bi-list fs-5"></i>
+  </button>
+</div>
+
+<!-- Sidebar Offcanvas Wrapper -->
+<div class="offcanvas-md offcanvas-start bg-dark text-white min-vh-100" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+  
+  <div class="offcanvas-header border-bottom border-secondary d-md-none">
+    <h5 class="offcanvas-title fw-bold text-white" id="sidebarMenuLabel">
+      <i class="bi bi-shield-fill-check text-primary me-2"></i>Navigation Menu
+    </h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+  </div>
+
+  <nav class="d-flex flex-column justify-content-between p-3 h-100 w-100 text-white">
+    <div>
+      <!-- Branding Header (Desktop View Only) -->
+      <div class="d-none d-md-flex align-items-center gap-2 mb-4 px-2">
+        <i class="bi bi-shield-fill-check text-primary fs-4"></i>
+        <h5 class="fw-bold m-0 text-white">NexusUser Portal</h5>
+      </div>
+
+      <!-- Links -->
+      <ul class="nav nav-pills flex-column gap-1">
+        <li class="nav-item">
+          <a class="nav-link text-white-50 d-flex align-items-center gap-2 px-3 py-2" href="/pages/dashboard.html" id="nav-dashboard">
+            <i class="bi bi-speedometer2"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white-50 d-flex align-items-center gap-2 px-3 py-2" href="/pages/user-list.html" id="nav-users">
+            <i class="bi bi-people-fill"></i> Users List
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white-50 d-flex align-items-center gap-2 px-3 py-2" href="/pages/user-add.html" id="nav-add-user">
+            <i class="bi bi-person-plus-fill"></i> Add New User
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- User Profile Footer -->
+    <div class="pt-3 border-top border-secondary mt-auto">
+      <div class="d-flex align-items-center gap-2 mb-3 px-2">
+        <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold text-uppercase" style="width: 36px; height: 36px;" id="user-avatar-initial">
+          U
+        </div>
+        <div class="text-truncate">
+          <p class="fw-bold mb-0 text-white text-truncate small" id="user-name-span">Loading...</p>
+          <span class="d-block text-secondary small" style="font-size: 11px;">Active Session</span>
+        </div>
+      </div>
+      <button id="logout-btn" class="btn btn-outline-danger btn-sm w-100 d-flex align-items-center justify-content-center gap-1">
+        <i class="bi bi-box-arrow-right"></i> Log Out
+      </button>
+    </div>
+  </nav>
+
+</div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - NexusUser Portal</title>
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+
+      <!-- 1. SIDEBAR CONTAINER (Loads sidebar.html) -->
+      <div id="sidebar-container" class="col-md-3 col-lg-2 p-0 bg-dark"></div>
+
+      <!-- 2. MAIN CONTENT WORKSPACE (Your actual page) -->
+     <main class="col-md-9 col-lg-10 px-md-4 py-4">
+        
+        <!-- Welcome Header -->
+        <div class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom">
+          <h1 class="h2 fw-bold text-dark">Dashboard</h1>
+          <span class="badge bg-primary fs-6" id="user-role-badge">Admin</span>
+        </div>
+
+        <!-- Dashboard Stats Cards Container -->
+        <div id="dashboard-stats-container" class="row g-3 mb-4">
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm p-3">
+              <span class="text-muted small">Total Users</span>
+              <h3 class="fw-bold my-1" id="stat-total-users">0</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm p-3">
+              <span class="text-muted small">Active Users</span>
+              <h3 class="fw-bold my-1 text-success" id="stat-active-users">0</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm p-3">
+              <span class="text-muted small">Admins</span>
+              <h3 class="fw-bold my-1 text-primary" id="stat-admin-users">0</h3>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 shadow-sm p-3">
+              <span class="text-muted small">Standard Users</span>
+              <h3 class="fw-bold my-1 text-secondary" id="stat-standard-users">0</h3>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- JS Dependencies -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

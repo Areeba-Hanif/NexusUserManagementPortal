@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add User - AdminPortal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      
+     <div id="sidebar-container" class="col-md-3 col-lg-2 p-0 bg-dark"></div>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+        <div class="card border-0 shadow-sm">
+          <div class="card-header bg-white py-3 border-0">
+            <h5 class="m-0 fw-bold"><i class="bi bi-person-add text-primary me-2"></i>Create New User Profile</h5>
+          </div>
+          <div class="card-body p-4">
+         <form id="add-user-form" action="javascript:void(0);" method="POST">
+  <div class="mb-3">
+    <label for="user-name" class="form-label">Full Name</label>
+    <input type="text" id="user-name" name="name" class="form-control" required placeholder="John Doe">
+  </div>
+
+  <div class="mb-3">
+    <label for="user-email" class="form-label">Email Address</label>
+    <input type="email" id="user-email" name="email" class="form-control" required placeholder="john@example.com">
+  </div>
+
+<div class="mb-3">
+  <label for="user-password" class="form-label">Set initial password for user</label>
+  <input type="password" id="user-password" class="form-control" placeholder="Create a temporary password" required>
+  <div class="form-text">The user can use this password for their first login.</div>
+</div>
+
+  <div class="mb-3">
+    <label for="user-role" class="form-label">Role</label>
+    <select id="user-role" name="role" class="form-select">
+      <option value="Viewer">Viewer</option>
+      <option value="Admin">Admin</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary" id="btn-submit-user">Add User</button>
+</form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - NexusUser Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center min-vh-100">
+
+  <div class="card border-0 shadow-lg text-center p-5" style="max-width: 480px; width: 100%; border-radius: 16px;">
+    <div class="mb-3">
+      <div class="bg-primary-subtle text-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+        <i class="bi bi-person-check-fill fs-1"></i>
+      </div>
+    </div>
+    
+    <h2 class="fw-bold mb-2">Welcome Back!</h2>
+    <p class="text-muted mb-4">You are logged in as <strong id="user-display-name" class="text-dark">User</strong>.</p>
+
+    <div class="alert alert-info py-2 px-3 small mb-4">
+      <i class="bi bi-shield-lock me-1"></i> Standard User Session Active
+    </div>
+
+    <button id="logout-btn" class="btn btn-danger btn-lg w-100 d-flex align-items-center justify-content-center gap-2">
+      <i class="bi bi-box-arrow-right"></i> Log Out
+    </button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
